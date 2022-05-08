@@ -12,7 +12,146 @@
 
 </head>
 <body style="background-color: rgb(214, 165, 74);">
-<h1>Compra un producto</h1>
+
+	<ul class="menu">
+		<li><center><a href="#"><img src="Img/logo.png" width="30" height="30" ></a></center></li>
+		<li><a href="Inicio.html">Inicio</a></li>
+		<li><a href="quienesSomos.html">Quienes Somos</a></li>
+		<li><a href="GaleriaDeFotos.html">Galeria de Fotos</a></li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Formularios
+			  </a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+				<li><a class="dropdown-item" href="formulario1.html">Registrarse</a></li>
+				<li><a class="dropdown-item" href="#">Comprar Producto</a></li>
+			</ul>
+		</li>
+</ul>
+
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su Nombre...">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Nombre solo debe contener letras </p>
+			</div>
+
+			<!-- Grupo: apellido -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingrese su Apellido...">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Apellido solo debe contener letras.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese número telefonico...">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+			</div>
+
+
+			<!-- Grupo: producto -->
+			<div class="formulario__grupo" id="grupo__producto">
+				<label for="producto" class="formulario__label">Producto</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="producto" id="producto" placeholder="Ingrese nombre del producto..." >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Nombre del producto solo debe contener letras.</p>
+			</div>
+
+            
+			<!-- Grupo: cantidad -->
+			<div class="formulario__grupo" id="grupo__cantidad">
+				<label for="cantidad" class="formulario__label">Cantidad</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="cantidad" id="cantidad" placeholder="Ingrese cantidad deseada... " >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error"> Solo debe contener numeros.</p>
+			</div>
+
+			
+
+			
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button> <br><br>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente! pronto nos contactaremos con usted.</p>
+			</div>
+		</form>
+
+	</main>
+
+	<div class="grid_1">
+		<div class="line-5">&nbsp;</div>
+	</div>
 	
+	<center><div class="grid_16">
+		 <div class="top-1">
+	<p>&nbsp;</p>
+	<h3>Nuestro Local</h3>
+	<p>&nbsp;</p>
+	<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.939992704862!2d-70.74652808480059!3d-33.45086988077385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c3a32556eb41%3A0x7667bc247e1ec132!2sOidor%20Sancho%208383%2C%20Pudahuel%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1618517520505!5m2!1ses-419!2scl" width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	</div>
+	</div></center>
+
+
+	<footer class="piepagina">
+        <div class="contenidofooter">
+            <figure>
+                <a href="Inicio.html" id="logo">
+                    <img src="img/logo.png" alt="NPG" width="100" >
+                </a>
+            </figure>
+            <div ><h2 >NGP</h2></div> <br><br><br>
+            <h4 class="textofooter">Siguenos</h4>
+            <div class="row justify-content-center"><div class="col-4"><img src="IMG/twitter.png" alt="" class="redsocial"></div>
+            <div class="col-4"><img src="IMG/instagram.png" alt="" class="redsocial"></div>
+            <div class="col-4"><img src="IMG/facebook.png" alt="" class="redsocial"></div>
+        </div>
+
+		<center><p>Benjamín Cepeda, Guido Altamirano, Nicolas Torrejón </p><br>
+			<p>@Copyright Derechos reservados.</p></center>
+
+	<script src="form2.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
